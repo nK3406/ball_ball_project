@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot 
+  name="urdf_pkd_10">
+  <link
+    name="alt_tabla">
+    <inertial>
+      <origin
+        xyz="0.000695368417866465 -0.0355009700192351 0.0659041333502034"
+        rpy="0 0 0" />
+      <mass
+        value="3.11208089575935" />
+      <inertia
+        ixx="0.0227153677888127"
+        ixy="-1.48499107751215E-08"
+        ixz="4.06846309937201E-05"
+        iyy="0.0251401539955464"
+        iyz="5.60767327869641E-06"
+        izz="0.0359557422747083" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/alt_tabla.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/alt_tabla.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ara_bag">
+    <inertial>
+      <origin
+        xyz="-8.09416009546204E-05 3.4282704042138E-05 0.00449950542085126"
+        rpy="0 0 0" />
+      <mass
+        value="0.00153692735411914" />
+      <inertia
+        ixx="4.15440641306904E-08"
+        ixy="-2.74681644252612E-19"
+        ixz="-5.12630472156257E-17"
+        iyy="4.15434022358236E-08"
+        iyz="-1.14220481031945E-10"
+        izz="2.65531223108225E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_bag.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_bag.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ara_bag_j"
+    type="continuous">
+    <origin
+      xyz="0.00033551 0.00017004 0.074577"
+      rpy="0 0.00060948 0" />
+    <parent
+      link="alt_tabla" />
+    <child
+      link="ara_bag" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="ust_tabla">
+    <inertial>
+      <origin
+        xyz="-0.000395821768254256 0.000177977913713032 0.0308592292910416"
+        rpy="0 0 0" />
+      <mass
+        value="0.402035216083513" />
+      <inertia
+        ixx="0.00133459009089929"
+        ixy="-8.52755745317482E-08"
+        ixz="-1.2127361263079E-05"
+        iyy="0.00133454432532333"
+        iyz="9.94454066608539E-06"
+        izz="0.00266152735579654" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ust_tabla.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ust_tabla.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ust_tabla_j"
+    type="continuous">
+    <origin
+      xyz="-8.0951E-05 0 0.0089996"
+      rpy="0 0 0" />
+    <parent
+      link="ara_bag" />
+    <child
+      link="ust_tabla" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="servo_kol1">
+    <inertial>
+      <origin
+        xyz="0.00250003380222744 -0.00792621120987124 9.94954718783747E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.000530413081760607" />
+      <inertia
+        ixx="4.79713454735475E-08"
+        ixy="-2.34966156712269E-13"
+        ixz="-7.31558730966973E-15"
+        iyy="4.885865313891E-09"
+        iyz="5.45561633423209E-10"
+        izz="4.83651467471464E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/servo_kol1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/servo_kol1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="servo_kol1_j"
+    type="continuous">
+    <origin
+      xyz="-0.0024915 0.07108 0.047488"
+      rpy="0 0 0" />
+    <parent
+      link="alt_tabla" />
+    <child
+      link="servo_kol1" />
+    <axis
+      xyz="-1 0 -2.0913E-05" />
+  </joint>
+  <link
+    name="ara_kol1">
+    <inertial>
+      <origin
+        xyz="6.1596851267165E-05 0.00190017209900047 0.0348893377307952"
+        rpy="0 0 0" />
+      <mass
+        value="0.00249619510290649" />
+      <inertia
+        ixx="1.16313053516493E-06"
+        ixy="-1.08187190238303E-10"
+        ixz="-1.98644081760239E-09"
+        iyy="1.15979662680313E-06"
+        iyz="-6.12787722466708E-08"
+        izz="3.79855456536018E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_kol1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.996078431372549 0.870588235294118 0.76078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_kol1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ara_kol1_j"
+    type="continuous">
+    <origin
+      xyz="0.0025 -0.020998 0.00026349"
+      rpy="0 0.00060948 0" />
+    <parent
+      link="servo_kol1" />
+    <child
+      link="ara_kol1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="ara_top1">
+    <inertial>
+      <origin
+        xyz="-7.49336538218015E-05 6.3345357742349E-05 0.00831394058052015"
+        rpy="0 0 0" />
+      <mass
+        value="0.00166752417988901" />
+      <inertia
+        ixx="5.18245966459301E-08"
+        ixy="-1.02732184084511E-12"
+        ixz="-1.5019947583821E-10"
+        iyy="6.50658263523624E-08"
+        iyz="2.60813844904187E-11"
+        izz="6.84886663946553E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_top1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_top1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ara_top1_j"
+    type="floating">
+    <origin
+      xyz="7.8641E-05 0.002783 0.052174"
+      rpy="0 0 0" />
+    <parent
+      link="ara_kol1" />
+    <child
+      link="ara_top1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <!-- <link
+    name="top_bag1">
+    <inertial>
+      <origin
+        xyz="-0.000117526938528623 -0.052617527127631 0.0018618182380859"
+        rpy="0 0 0" />
+      <mass
+        value="0.402035216083513" />
+      <inertia
+        ixx="0.00133447928549816"
+        ixy="5.62347033318639E-09"
+        ixz="-1.6662407377262E-07"
+        iyy="0.00133446982505349"
+        iyz="-1.66625546397804E-07"
+        izz="0.00266171266146751" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/top_bag1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/top_bag1.STL" />
+      </geometry>
+    </collision>
+  </link> -->
+  <!-- <joint
+    name="ust_tabla_j"
+    type="fixed">
+    <origin
+      xyz="-0.0001104 9.3329E-05 0.012249"
+      rpy="-0.0076194 -0.0090123 6.8668E-05" />
+    <parent
+      link="ara_top1" />
+    <child
+      link="ust_tabla" />
+    <axis
+      xyz="0 0 0" />
+  </joint> -->
+  <link
+    name="servo_kol2">
+    <inertial>
+      <origin
+        xyz="-0.00791584665380898 -0.00249883300914071 0.000424363716795495"
+        rpy="0 0 0" />
+      <mass
+        value="0.000530413177353064" />
+      <inertia
+        ixx="4.99950950783473E-09"
+        ixy="6.75715199094322E-12"
+        ixz="2.28597533491095E-09"
+        iyy="4.79713447640068E-08"
+        iyz="7.91769796122887E-13"
+        izz="4.82515035766695E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/servo_kol2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/servo_kol2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="servo_kol2_j"
+    type="continuous">
+    <origin
+      xyz="0.073529 0.0025928 0.047392"
+      rpy="0 0.00060948 0" />
+    <parent
+      link="alt_tabla" />
+    <child
+      link="servo_kol2" />
+    <axis
+      xyz="0 1 -0.0028584" />
+  </joint>
+  <link
+    name="ara_kol2">
+    <inertial>
+      <origin
+        xyz="2.60462330745614E-05 0.000181097603139869 0.0349406190657459"
+        rpy="0 0 0" />
+      <mass
+        value="0.00249619510290649" />
+      <inertia
+        ixx="1.16313341514313E-06"
+        ixy="-4.35995513257444E-12"
+        ixz="-8.41201256511935E-10"
+        iyy="1.16310372775323E-06"
+        iyz="-5.84881238909139E-09"
+        izz="3.46755647252905E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_kol2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.996078431372549 0.870588235294118 0.76078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_kol2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ara_kol2_j"
+    type="continuous">
+    <origin
+      xyz="-0.020971 -0.0024968 0.0011124"
+      rpy="0 0 0" />
+    <parent
+      link="servo_kol2" />
+    <child
+      link="ara_kol2" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="ara_top2">
+    <inertial>
+      <origin
+        xyz="-7.49336475598106E-05 6.33457535265079E-05 0.00831394058332685"
+        rpy="0 0 0" />
+      <mass
+        value="0.00166752417515438" />
+      <inertia
+        ixx="6.50659057533879E-08"
+        ixy="-3.52087911775746E-13"
+        ixz="-3.08607609185432E-11"
+        iyy="5.18242101949533E-08"
+        iyz="1.26978751141287E-10"
+        izz="6.84889730750205E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_top2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/ara_top2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ara_top2_j"
+    type="floating">
+    <origin
+      xyz="2.6752E-05 0.00027385 0.052249"
+      rpy="0 0 0" />
+    <parent
+      link="ara_kol2" />
+    <child
+      link="ara_top2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <!-- <link
+    name="top_bag2">
+    <inertial>
+      <origin
+        xyz="-0.0526175269385287 -0.000117527127630981 0.00186181823808584"
+        rpy="0 0 0" />
+      <mass
+        value="0.402035216083513" />
+      <inertia
+        ixx="0.00133447928549816"
+        ixy="5.62347033318639E-09"
+        ixz="-1.6662407377262E-07"
+        iyy="0.00133446982505349"
+        iyz="-1.66625546397803E-07"
+        izz="0.00266171266146751" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/top_bag2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/top_bag2.STL" />
+      </geometry>
+    </collision>
+  </link> -->
+  <!-- <joint
+    name="ust_tabla_j"
+    type="fixed">
+    <origin
+      xyz="-0.0001104 9.3329E-05 0.012249"
+      rpy="-0.0076194 -0.0090123 6.8668E-05" />
+    <parent
+      link="ara_top2" />
+    <child
+      link="ust_bag" />
+    <axis
+      xyz="0 0 0" />
+  </joint> -->
+  <link
+    name="kamera_ek">
+    <inertial>
+      <origin
+        xyz="2.53639462169386E-06 -8.67361737988404E-19 0.00416161117522396"
+        rpy="0 0 0" />
+      <mass
+        value="0.00534719436606297" />
+      <inertia
+        ixx="2.85851324719255E-07"
+        ixy="1.12478041050372E-24"
+        ixz="1.28941396305223E-10"
+        iyy="2.85851246132801E-07"
+        iyz="2.92370784136632E-24"
+        izz="4.97412945258465E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/kamera_ek.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_pkd_10/meshes/kamera_ek.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="kamera_ek_j"
+    type="fixed">
+    <origin
+      xyz="0.0011275 0.00071058 0.25012"
+      rpy="-3.1387 0 -3.1416" />
+    <parent
+      link="alt_tabla" />
+    <child
+      link="kamera_ek" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <!-- <joint name="camera_optical_joint" type="fixed">
+        <parent link="kamera_ek"/>
+        <child link="camera_link_optical"/>
+        <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+  </joint>
+
+  <link name="camera_link_optical"></link> -->
+
+  <!-- <gazebo reference="camera_link">
+        <material>Gazebo/Black</material>
+
+        <sensor name="camera" type="camera">
+            <pose> 0 0 0 0 0 0 </pose>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <camera>
+                <horizontal_fov>1.089</horizontal_fov>
+                <image>
+                    <format>R8G8B8</format>
+                    <width>640</width>
+                    <height>480</height>
+                </image>
+                <clip>
+                    <near>0.05</near>
+                    <far>8.0</far>
+                </clip>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>camera_link_optical</frame_name>
+            </plugin>
+        </sensor>
+  <gazebo>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>urdf_pkd_10</robotNamespace>
+    </plugin>
+  </gazebo> -->
+</robot>
